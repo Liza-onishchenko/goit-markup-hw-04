@@ -396,6 +396,7 @@ padding: 0 15px;
     column-gap: 24px;
     flex-wrap: wrap;
     row-gap: 48px;
+    box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item {
@@ -404,7 +405,8 @@ padding: 0 15px;
     box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover {
+.portfolio-item:hover,
+.portfolio-item:focus{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -506,9 +508,6 @@ padding: 0 15px;
 
 .social-footer {
     display: flex;
-    column-gap: 16px;
-    line-height: 1.5;
-    etter-spacing: 0.02em;
     gap: 16px;
 }
 
@@ -516,6 +515,8 @@ padding: 0 15px;
     color: #ffffff;
     font-weight: 500;
     margin-bottom: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .footer-container{
@@ -526,15 +527,17 @@ padding: 0 15px;
 
 .social-footer-item{
     height: 40px;
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    width: 40px;
 }
 
 .social-footer-link{
+    display: flex; 
     background-color:#4d5ae5;
     border-radius: 50%;
-    display: flex; 
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    height: 100% ;
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-footer-icon{
